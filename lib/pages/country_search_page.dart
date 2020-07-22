@@ -56,7 +56,7 @@ class Search extends SearchDelegate {
         ? countryList
         : countryList
             .where((element) =>
-                element['country'].toString().toLowerCase().startsWith(query))
+                element['country'].toString().toLowerCase().startsWith(query.toLowerCase()))
             .toList();
 
     void _modalBottomSheet(BuildContext context, index) {
