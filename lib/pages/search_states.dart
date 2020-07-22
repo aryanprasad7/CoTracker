@@ -56,7 +56,7 @@ class Search extends SearchDelegate {
         ? stateList
         : stateList
             .where((element) =>
-                element['loc'].toString().toLowerCase().startsWith(query))
+                element['loc'].toString().toLowerCase().startsWith(query.toLowerCase()))
             .toList();
 
     return ListView.builder(
